@@ -11,6 +11,7 @@ export type ItemInfo = {
 	owner: string;
 	price: number;
 	subject: string;
+	id: string;
 }
 
 const Item: React.FC<Props> = (props: Props) => {

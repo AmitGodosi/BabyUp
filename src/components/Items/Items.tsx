@@ -13,8 +13,9 @@ const Items: React.FC<Props> = (props: Props) => {
 	return (
 		<Grid className='items-container'>
 			{items && items.map((item: ItemInfo) => {
+				const { id } = item || {};
 				return (
-					<Item item={item} />
+					<Item key={id} item={item} />
 				)
 			})}
 		</Grid>
