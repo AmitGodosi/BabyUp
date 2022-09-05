@@ -1,0 +1,48 @@
+.profile-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	& h2 {
+		font-size: 56px;
+	}
+	.childs {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 24px;
+
+		.child-woman {
+			background-color: rgb(214, 144, 230);
+			padding: 10px 20px;
+			border-radius: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			.details {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				gap: 20px;
+			}
+		}
+		.child-men {
+			background-color: rgb(161, 186, 209);
+			padding: 10px;
+			border-radius: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			.details {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+			}
+		}
+	}
+}

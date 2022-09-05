@@ -1,0 +1,39 @@
+.sidebar-container {
+	height: 100%;
+	width: 100%;
+	background-color: rgb(122, 144, 144);
+	.icons {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		.top-icons {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-direction: column;
+			gap: 24px;
+			height: 25%;
+			margin-top: 24px;
+		}
+		.bottom-icons {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			flex-direction: column;
+			gap: 24px;
+			height: 75%;
+			margin-bottom: 24px;
+		}
+	}
+}
+.side-icon {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+
+	&:hover {
+		transform: scale(1.1);
+		color: rgb(233, 224, 224);
+	}
+}

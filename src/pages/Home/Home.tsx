@@ -11,7 +11,7 @@ import './Home.scss';
 
 type Props = {}
 
-const Home: Props = () => {
+const Home = (props: Props) => {
 	const dispatch = useDispatch();
 	const reduxState = useSelector((state: any) => state)
 	const { fullItems, popularItems } = reduxState;
@@ -32,7 +32,6 @@ const Home: Props = () => {
 			{ owner: 'Noa Fadida', price: 40, subject: 'Computer-Science', id: '12' },
 		]
 		dispatch(queryActions.setFullItems(data))
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	return (

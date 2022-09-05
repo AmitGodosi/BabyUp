@@ -3,7 +3,7 @@ import Label from 'common-components/Label/Label';
 import React from 'react'
 import './Item.scss';
 
-export interface Props {
+export type Props = {
 	item: ItemInfo;
 }
 
